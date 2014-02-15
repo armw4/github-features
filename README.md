@@ -36,9 +36,9 @@ then the tests should all pass.
 
 Each feature is broken down into three slices:
 
-* `feature file` - features/&lt;feature&gt;/&lt;subfeature&gt;.feature
-* `page object` - features/pages/&lt;feature&gt;/&lt;subfeature&gt;.rb
-* `step file` - features/steps/&lt;feature&gt;/&lt;subfeature&gt;.rb
+* `feature file` - features/**&lt;feature&gt;**/**&lt;subfeature&gt;**.feature
+* `page object` - features/pages/**&lt;feature&gt;**/**&lt;subfeature&gt;**.rb
+* `step file` - features/steps/**&lt;feature&gt;**/**&lt;subfeature&gt;**.rb
 
 For example, projects/repositories can have pull requests. Project would be the feature, and pull request would
 be the sub feature. I'm in no way shape or form advocating that this is ***the*** way to organize your
