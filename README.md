@@ -85,9 +85,9 @@ dynamically switches the content. This was the perfect use case for the `DiffSec
 
 ### Are Page Objects Ubiquitous?
 
-I've yet to see this pattern adopted by mainstream ruby projects. Most if not all are content with using `capybara` directly; which
-is great. However, page objects via `site_prism` are one step closer to greatness IMO. You can modify your DOM with far greater
+I've yet to see this pattern adopted by mainstream ruby projects. Most, if not all, are content with using `capybara` directly; which
+is great. However, page objects via `site_prism` are one step closer to greatness ***IMHO***. You can modify your DOM with far greater
 conviction, further improve the readability and maintainability of your tests, and encapsulate the various aspects of each page
 or section of a page in a single location (makes refactoring trivial). Do I have a problem with using pure `capybara` to write tests?
-Absolutely NOT!! `capybara` is awesome and I'd gladly work with it directly on any project. Thank being said, I think page objects
+Absolutely ***NOT!!*** `capybara` is awesome and I'd gladly work with it directly on any project. Thank being said, I think page objects
 are an added bonus, and allow us to speak the "ubiquitous language" of our domain even more so (among other benefits). Cheers...
