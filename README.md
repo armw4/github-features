@@ -40,15 +40,15 @@ Each feature is broken down into three slices:
 * `page object` - features/pages/**&lt;feature&gt;**/**&lt;subfeature&gt;**.rb
 * `step file` - features/steps/**&lt;feature&gt;**/**&lt;subfeature&gt;**.rb
 
-For example, projects/repositories can have pull requests. Project would be the feature, and pull request would
-be the sub feature. I'm in no way shape or form advocating that this is ***the*** way to organize your
+For example, projects/repositories can have pull requests. `Project` would be the ***feature***, and `pull request` would
+be the ***sub feature***. I'm in no way, shape, or form advocating that this is ***the*** way to organize your
 test code. It's just something I'm experimenting with. This would probably need another level of granularity
 to account for the different actions you can take within a sub feature (`create`, `read`, `update`, `delete`), ***or not***.
 It ultimately depends on the guys you're working with.
 
 ### Running the tests
 
-I may or may not have setup a rake tasks to execute the tests by the time you encounter this `README.` If not,
+I may or may not have setup a rake task to execute the tests by the time you encounter this `README.` If not,
 install `cucumber` via:
 
 ```shell
@@ -68,8 +68,8 @@ from there.
 
 ### Why Page Objects?
 
-Page objects keep your test dry. Your step definitions won't be cluttered with selectors and parsing boilerplate.
-It's a good way to separate the concerns of your arange, act, assert from the underlying DOM.
+Page objects keep your tests dry. Your step definitions won't be cluttered with selectors and parsing boilerplate.
+It's a good way to separate the concerns of your arrange, act, assert from the underlying DOM.
 Yes, `capybara` has a beautiful DSL, but you'll inevitably need to access the same element or section of the DOM more than once,
 and that's where the duplication will start to take its toll. Page objects are more than a fad or purist thing to me. They make
 your code much less dependant on the structure of your DOM. Need to change your markup? Great, make the change, watch
