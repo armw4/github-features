@@ -63,7 +63,7 @@ cucumber --verbose
 ```
 
 from the command line. The verbosity switch is obviously optional. You don't need to be inside the `features` folder
-to run the tests. `cucumber` by default will scan you're current directory for a folder named `features` and go to town
+to run the tests. `cucumber` by default will scan your current directory for a folder named `features` and go to town
 from there.
 
 ### Why Page Objects?
